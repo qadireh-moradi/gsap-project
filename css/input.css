@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.b-header__menu {
+    position: relative;
+    display: block;
+    width: 48px;
+    height: 24px;
+  }
+  .b-header__menu::after, .b-header__menu::before {
+    content: '';
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+  }
+  .b-header__menu span, .b-header__menu::after, .b-header__menu::before {
+    width: 48px;
+    height: 2px;
+    display: block;
+    background: #fff;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+  }
+  .b-header__menu span {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+  }
+  .b-header__menu span, .b-header__menu::after, .b-header__menu::before {
+    width: 48px;
+    height: 2px;
+    display: block;
+    background: #fff;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+  }
+  .b-header__menu::after, .b-header__menu::before {
+    content: '';
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+  }
+  .b-header__menu span, .b-header__menu::after, .b-header__menu::before {
+    width: 48px;
+    height: 2px;
+    display: block;
+    background: #fff;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+  }
+  .b-header__menu:hover::before {
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
+  }
+  .b-header__menu:hover::after {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+  .b-header__menu::after {
+    bottom: 0;
+  }
+  .b-header__mail {
+    background: url(../images/mail_icon.svg) no-repeat;
+      background-size: auto;
+    width: 21px;
+    height: 21px;
+    display: block;
+    margin-right: 34px;
+    transform: scale(1.2);
+    background-size: cover;
+  }
+  .b-header__mail:hover {
+    -webkit-animation: wrench 1s ease infinite;
+    animation: wrench 1s ease infinite;
+  }
+  .b-header__phone:hover {
+    -webkit-animation: wrench 1s ease infinite;
+    animation: wrench 1s ease infinite;
+  }
+
+  .b-header__phone {
+    display: block;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    background-position: 69.10569105691057% 52.59515570934256%;
+  }
+  .b-header--black .b-header__phone, .b-header__phone {
+    background: url(../images/phone.svg) no-repeat;
+      
+    width: 19px;
+    height: 19px;
+  }
+  @-webkit-keyframes wrench{0%,to{-webkit-transform:rotate(-8deg) scale(1.2);transform:rotate(-8deg) scale(1.2)}50%{-webkit-transform:rotate(36deg) scale(1.2);transform:rotate(36deg) scale(1.2)}}@keyframes wrench{0%,to{-webkit-transform:rotate(-8deg) scale(1.2);transform:rotate(-8deg) scale(1.2)}50%{-webkit-transform:rotate(36deg) scale(1.2);transform:rotate(36deg) scale(1.2)}}
